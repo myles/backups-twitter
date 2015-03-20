@@ -16,6 +16,8 @@ t favorites --csv --number 3000 > favorites.csv
 t direct_messages --csv --number 3000 > dm_received.csv
 t direct_messages_sent --csv --number 3000 > dm_sent.csv
 
+t whoami > profile.txt
+
 gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o dm_received.csv.gpg dm_received.csv
 gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o dm_sent.csv.gpg dm_sent.csv
 

@@ -1,9 +1,9 @@
 ID           676153
 Since        Jan 21  2007 (8 years ago)
-Last update  Figured out how to easily backup my Twitter to GitHub: https://t.co/4uos39u5z5 (thanks to @cbbrowne). (4 hours ago)
+Last update  What the 2012 US Presidential Election would look like with 100% voter turnout http://t.co/DhT366iRI2 http://t.co/dpmMY28PED (a minute ago)
 Screen name  @mylesb
 Name         Myles Braithwaite
-Tweets       57,977
+Tweets       57,981
 Favorites    1,154
 Listed       8
 Following    207

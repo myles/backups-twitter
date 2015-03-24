@@ -30,3 +30,5 @@ t followers --csv > followers.csv
 
 git add ${ARCHIVEHOME}
 git commit -m "script.sh automated checkin on `hostname -s`."
+
+git push origin master

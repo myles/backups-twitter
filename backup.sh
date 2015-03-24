@@ -2,21 +2,21 @@
 
 GPGKEYS=${GPGKEYS:-"5A2FE7BF"}
 ARCHIVEHOME=${HOME}/Backups/Twitter
-
+TWITTER_USER="@MylesB"
 
 cd ${ARCHIVEHOME}
 
 git fetch origin
 git pull origin master
 
-t timeline @mylesb --csv --number 3000 > tweets.csv
+t timeline $TWITTER_USER --csv --decode-uris --number 3000 > tweets.csv
 
-t retweets --csv --number 3000 > retweets.csv
+t retweets --csv --decode-uris --number 3000 > retweets.csv
 
-t favorites --csv --number 3000 > favorites.csv
+t favorites --csv --decode-uris --number 3000 > favorites.csv
 
-t direct_messages --csv --number 3000 > dm_received.csv
-t direct_messages_sent --csv --number 3000 > dm_sent.csv
+t direct_messages --csv --decode-uris --number 3000 > dm_received.csv
+t direct_messages_sent --csv --decode-uris --number 3000 > dm_sent.csv
 
 t whoami > profile.txt
 

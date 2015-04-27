@@ -9,24 +9,24 @@ cd ${ARCHIVEHOME}
 git fetch origin
 git pull origin master
 
-t timeline $TWITTER_USER --csv --decode-uris --number 3000 > tweets.csv
+t timeline $TWITTER_USER --csv --decode-uris --number 3000 > ${ARCHIVEHOME}/tweets.csv
 
-t retweets --csv --decode-uris --number 3000 > retweets.csv
+t retweets --csv --decode-uris --number 3000 > ${ARCHIVEHOME}/retweets.csv
 
-t favorites --csv --decode-uris --number 3000 > favorites.csv
+t favorites --csv --decode-uris --number 3000 > ${ARCHIVEHOME}/favorites.csv
 
-t direct_messages --csv --decode-uris --number 3000 > dm_received.csv
-t direct_messages_sent --csv --decode-uris --number 3000 > dm_sent.csv
+t direct_messages --csv --decode-uris --number 3000 > ${ARCHIVEHOME}/dm_received.csv
+t direct_messages_sent --csv --decode-uris --number 3000 > ${ARCHIVEHOME}/dm_sent.csv
 
-t whoami > profile.txt
+t whoami > ${ARCHIVEHOME}/profile.txt
 
-t lists -l --csv > lists.csv
+t lists -l --csv > ${ARCHIVEHOME}/lists.csv
 
-gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o dm_received.csv.gpg dm_received.csv
-gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o dm_sent.csv.gpg dm_sent.csv
+gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${ARCHIVEHOME}/dm_received.csv.gpg ${ARCHIVEHOME}/dm_received.csv
+gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${ARCHIVEHOME}/dm_sent.csv.gpg ${ARCHIVEHOME}/dm_sent.csv
 
-t followings --csv > followings.csv
-t followers --csv > followers.csv
+t followings --csv > ${ARCHIVEHOME}/followings.csv
+t followers --csv > ${ARCHIVEHOME}/followers.csv
 
 git add ${ARCHIVEHOME}
 git commit -m "script.sh automated checkin on `hostname -s`."

@@ -22,8 +22,14 @@ t whoami > ${ARCHIVEHOME}/profile.txt
 
 t lists -l --csv > ${ARCHIVEHOME}/lists.csv
 
+for list in `t lists -i`
+do
+  t list members $list -l --csv > ${ARCHIVEHOME}/lists/${list////-}.csv
+done
+
 gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${ARCHIVEHOME}/dm_received.csv.gpg ${ARCHIVEHOME}/dm_received.csv
 gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${ARCHIVEHOME}/dm_sent.csv.gpg ${ARCHIVEHOME}/dm_sent.csv
+gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${ARCHIVEHOME}/lists/\@mylesb-awesome-people.csv.gpg  ${ARCHIVEHOME}/lists/\@mylesb-awesome-people.csv
 
 t followings --csv > ${ARCHIVEHOME}/followings.csv
 t followers --csv > ${ARCHIVEHOME}/followers.csv

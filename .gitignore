@@ -1,2 +1,11 @@
 dm_received.csv
 dm_sent.csv
+lists/*
+!lists/@mylesb-awesome-people.csv.gpg
+!lists/@mylesb-musicians-bands.csv
+!lists/@mylesb-news-services-reporters.csv
+!lists/@mylesb-parody.csv
+!lists/@mylesb-politicians.csv
+!lists/@mylesb-space.csv
+!lists/@mylesb-technology.csv
+!lists/@mylesb-user-groups.csv

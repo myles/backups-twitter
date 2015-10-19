@@ -24,7 +24,7 @@ t lists -l --csv > ${ARCHIVEHOME}/lists.csv
 
 for list in `t lists -i`
 do
-  if [[ $list == $TWITTER_USER* ]];
+  if [ $list == $TWITTER_USER* ];
   then
     t list members $list -l --csv > ${ARCHIVEHOME}/lists/${list//${TWITTER_USER,,}\/}.csv
   fi

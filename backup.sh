@@ -24,7 +24,7 @@ t lists -l --csv > ${ARCHIVEHOME}/lists.csv
 
 for list in `t lists -i`
 do
-  t list members $list -l --csv > ${ARCHIVEHOME}/lists/${list////-}.csv
+  t list members $list -l --csv > ${ARCHIVEHOME}/lists/${list//${TWITTER_USER,,}\/}.csv
 done
 
 gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${ARCHIVEHOME}/dm_received.csv.gpg ${ARCHIVEHOME}/dm_received.csv

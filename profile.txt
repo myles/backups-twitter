@@ -1,13 +1,13 @@
 ID           676153
-Since        Jan 21  2007 (8 years ago)
-Last update  RT @gtalug: We have a great #GTALUG meeting tomorrow night at 7:30pm on #OpenStreetMap with @scruss http://t.co/MWlZZOvrWQ http://t.co/zLT0UgGwcf (5 hours ago)
+Since        Jan 21  2007 (9 years ago)
+Last update  RT @daveshumka: If you're under 35 and nice, please vote to cancel out the opinion of my semi-retired former co-worker who doesn't know how racist he is. (an hour ago)
 Screen name  @mylesb
 Name         Myles Braithwaite
-Tweets       58,190
-Favorites    1,152
-Listed       8
-Following    192
-Followers    221
-Bio          Hoping for the Best, Imagining the Worst. PGP Key: http://t.co/NAzDFhazPX Fingerprint: 45A5 ED20 B8E8 06FD 8CF8 ED1E 6A4C E837 5A2F E7BF retweet ≠ endorsement
+Tweets       59,066
+Favorites    1,177
+Listed       21
+Following    241
+Followers    241
+Bio          Hoping for the Best, Imagining the Worst. PGP Key: http://t.co/NAzDFhrCRX Fingerprint: 45A5 ED20 B8E8 06FD 8CF8 ED1E 6A4C E837 5A2F E7BF
 Location     Toronto
 URL          http://mylesbraithwaite.com

@@ -1,8 +1,7 @@
 #!/bin/sh
 
 GPGKEYS=${GPGKEYS:-"5A2FE7BF"}
-#ARCHIVEHOME=${HOME}/Backups/Twitter
-ARCHIVEHOME=/Users/Myles/Downloads/backups-twitter
+ARCHIVEHOME=${HOME}/Backups/Twitter
 TWITTER_USER="@MylesB"
 
 cd ${ARCHIVEHOME}

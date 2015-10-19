@@ -8,5 +8,5 @@ This Git repository stores the backup of [my Twitter profile](https://www.twitte
 
 ## Usage
 
-- Edit the `TWITTER_USER` varable in `backup.sh` shell script.
+- Edit the `TWITTER_USER` & `GPGKEYS` varables in `backup.sh` shell script.
 - Run `./backup.sh` from you command line.

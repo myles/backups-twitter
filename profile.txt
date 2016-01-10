@@ -1,0 +1,13 @@
+ID           676153
+Since        Jan 21  2007 (9 years ago)
+Last update  PyThor allows you to leverage R’s packages in Python https://t.co/rDN5olUmN8 (an hour ago)
+Screen name  @mylesb
+Name         Myles Braithwaite
+Tweets       59,559
+Favorites    1,195
+Listed       27
+Following    242
+Followers    263
+Bio          ☕️  Hoping for the Best, Imagining the Worst.   PGP Key: https://t.co/NAzDFha20p  Fingerprint: 45A5 ED20 B8E8 06FD 8CF8 ED1E 6A4C E837 5A2F E7BF
+Location     Toronto
+URL          http://mylesbraithwaite.com

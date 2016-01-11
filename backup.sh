@@ -3,11 +3,16 @@
 GPGKEYS=${GPGKEYS:-"5A2FE7BF"}
 ARCHIVEHOME=${HOME}/Backups/Twitter
 TWITTER_USER="@MylesB"
+PRIVATE_LISTS=("mylesb/awesome-people" "mylesb/egocentric" "mylesb/family")
 
 cd ${ARCHIVEHOME}
 
 git fetch origin
 git pull origin master
+
+function encrypt () {
+  gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${ARCHIVEHOME}/$1.gpg ${ARCHIVEHOME}/$1.csv
+}
 
 t timeline $TWITTER_USER --csv --decode-uris --number 3000 > ${ARCHIVEHOME}/tweets.csv
 git add ${ARCHIVEHOME}/tweets.csv
@@ -24,21 +29,24 @@ git add ${ARCHIVEHOME}/profile.txt
 t lists -l --csv > ${ARCHIVEHOME}/lists.csv
 git add ${ARCHIVEHOME}/lists.csv
 
-#mkdir -p ${ARCHIVEHOME}/lists/${TWITTER_USER//\@}/
-#
-#for list in `t lists -i`
-#do
-#  t list members $list -l --csv > ${ARCHIVEHOME}/lists/${list//\@}.csv
-#done
-#
-#git add lists
+for list in `t lists -i`
+do
+  t list members $list -l --csv > ${ARCHIVEHOME}/lists/${list//\@}.csv
+done
+
+for list in ${PRIVATE_LISTS[@]}
+do
+  encrypt lists/$list.csv
+done
+
+git add ${ARCHIVEHOME}/lists
 
 t direct_messages --csv --decode-uris --number 3000 > ${ARCHIVEHOME}/dm_received.csv
-gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${ARCHIVEHOME}/dm_received.csv.gpg ${ARCHIVEHOME}/dm_received.csv
+encrypt dm_received.csv
 git add ${ARCHIVEHOME}/dm_received.csv.gpg
 
 t direct_messages_sent --csv --decode-uris --number 3000 > ${ARCHIVEHOME}/dm_sent.csv
-gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${ARCHIVEHOME}/dm_sent.csv.gpg ${ARCHIVEHOME}/dm_sent.csv
+encrypt dm_sent.csv
 git add ${ARCHIVEHOME}/dm_sent.csv.gpg
 
 t followings $TWITTER_USER --csv > ${ARCHIVEHOME}/followings.csv

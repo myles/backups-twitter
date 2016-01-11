@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 GPGKEYS=${GPGKEYS:-"5A2FE7BF"}
 ARCHIVEHOME=${HOME}/Backups/Twitter

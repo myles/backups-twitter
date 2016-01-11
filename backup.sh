@@ -11,7 +11,7 @@ git fetch origin
 git pull origin master
 
 function encrypt () {
-  gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${ARCHIVEHOME}/$1.gpg ${ARCHIVEHOME}/$1.csv
+  gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${ARCHIVEHOME}/$1.gpg ${ARCHIVEHOME}/$1
 }
 
 t timeline $TWITTER_USER --csv --decode-uris --number 3000 > ${ARCHIVEHOME}/tweets.csv

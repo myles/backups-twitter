@@ -47,7 +47,7 @@ git add ${ARCHIVEHOME}/followings.csv
 t followers $TWITTER_USER --csv > ${ARCHIVEHOME}/followers.csv
 git add ${ARCHIVEHOME}/followers.csv
 
-#git commit -m "script.sh automated checkin on `hostname -s`."
+git commit -m "script.sh automated checkin on `hostname -s`."
 
-#git push origin master
+git push origin master
 

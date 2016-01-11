@@ -1,6 +1,6 @@
 ID           676153
 Since        Jan 21  2007 (9 years ago)
-Last update  PyThor allows you to leverage R’s packages in Python https://t.co/rDN5olUmN8 (an hour ago)
+Last update  PyThor allows you to leverage R’s packages in Python https://t.co/rDN5olUmN8 (3 hours ago)
 Screen name  @mylesb
 Name         Myles Braithwaite
 Tweets       59,559

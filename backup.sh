@@ -36,8 +36,8 @@ gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${AR
 t followings $TWITTER_USER --csv > ${ARCHIVEHOME}/followings.csv
 t followers $TWITTER_USER --csv > ${ARCHIVEHOME}/followers.csv
 
-git add ${ARCHIVEHOME}
-git commit -m "script.sh automated checkin on `hostname -s`."
+#git add ${ARCHIVEHOME}
+#git commit -m "script.sh automated checkin on `hostname -s`."
 
-git push origin master
+#git push origin master
 

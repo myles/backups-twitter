@@ -1,11 +1,5 @@
 dm_received.csv
 dm_sent.csv
-lists/*
-!lists/awesome-people.csv.gpg
-!lists/musicians-bands.csv
-!lists/news-services-reporters.csv
-!lists/parody.csv
-!lists/politicians.csv
-!lists/space.csv
-!lists/technology.csv
-!lists/user-groups.csv
+lists/mylesb/awesome-people.csv
+lists/mylesb/egocentric.csv
+lists/mylesb/family.csv

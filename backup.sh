@@ -22,9 +22,11 @@ t whois $TWITTER_USER > ${ARCHIVEHOME}/profile.txt
 
 t lists -l --csv > ${ARCHIVEHOME}/lists.csv
 
+mkdir -p ${ARCHIVEHOME}/lists/$TWITTER_USER
+
 for list in `t lists -i`
 do
-  t list members $list -l --csv > ${ARCHIVEHOME}/lists/${list//${TWITTER_USER,,}\/}.csv
+  t list members $list -l --csv > ${ARCHIVEHOME}/lists/${list//\@}.csv
 done
 
 gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${ARCHIVEHOME}/dm_received.csv.gpg ${ARCHIVEHOME}/dm_received.csv

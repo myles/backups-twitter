@@ -24,14 +24,14 @@ git add ${ARCHIVEHOME}/profile.txt
 t lists -l --csv > ${ARCHIVEHOME}/lists.csv
 git add ${ARCHIVEHOME}/lists.csv
 
-mkdir -p ${ARCHIVEHOME}/lists/${TWITTER_USER//\@}/
-
-for list in `t lists -i`
-do
-  t list members $list -l --csv > ${ARCHIVEHOME}/lists/${list//\@}.csv
-done
-
-git add lists
+#mkdir -p ${ARCHIVEHOME}/lists/${TWITTER_USER//\@}/
+#
+#for list in `t lists -i`
+#do
+#  t list members $list -l --csv > ${ARCHIVEHOME}/lists/${list//\@}.csv
+#done
+#
+#git add lists
 
 t direct_messages --csv --decode-uris --number 3000 > ${ARCHIVEHOME}/dm_received.csv
 gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${ARCHIVEHOME}/dm_received.csv.gpg ${ARCHIVEHOME}/dm_received.csv

@@ -1,13 +1,13 @@
 ID           676153
 Since        Jan 21  2007 (9 years ago)
-Last update  RT @bitfield: Major new SSH vulnerability discovered: public keys are public https://t.co/9ikZ0B12Sn (6 hours ago)
+Last update  Verifying that +mylesb is my blockchain ID. https://t.co/8awRtg1aif (4 hours ago)
 Screen name  @mylesb
 Name         Myles Braithwaite
-Tweets       59,584
-Favorites    1,196
-Listed       27
-Following    244
-Followers    264
-Bio          ☕️  Hoping for the Best, Imagining the Worst.   PGP Key: https://t.co/NAzDFha20p  Fingerprint: 45A5 ED20 B8E8 06FD 8CF8 ED1E 6A4C E837 5A2F E7BF
+Tweets       60,120
+Favorites    1,205
+Listed       29
+Following    281
+Followers    276
+Bio          Hoping for the Best, Imagining the Worst. | PGP Info: https://t.co/pM2QrNxyZI | Fingerprint: 6720 DB3C 03FF DDF1 3838  7D4A A49A 64DF 5B42 3590
 Location     Toronto
-URL          http://mylesbraithwaite.com
+URL          https://mylesb.ca/
